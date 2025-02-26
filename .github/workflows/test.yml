@@ -1,6 +1,8 @@
 name: Test workflow
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 22 * * *'
 
 jobs:
   calculate-and-send:
